@@ -31,8 +31,8 @@ var server = new StellarSdk.Server(host, {allowHttp: true});
 
 // Uncomment the following line to build transactions for the live network. Be
 // sure to also change the horizon hostname.
-// StellarSdk.Network.usePublicNetwork();
-StellarSdk.Network.useTestNetwork();
+StellarSdk.Network.usePublicNetwork();
+// StellarSdk.Network.useTestNetwork();
 
 // Transactions require a valid sequence number that is specific to this account.
 // We can fetch the current sequence number for the source account from Horizon.
