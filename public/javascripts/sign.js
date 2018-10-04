@@ -24,7 +24,7 @@ var sourcePublicKey = sourceKeypair.publicKey();
 
 // Configure StellarSdk to talk to the horizon instance hosted by Stellar.org
 // To use the live network, set the hostname to 'horizon.stellar.org'
-var server = new StellarSdk.Server(host);
+var server = new StellarSdk.Server(host, {allowHttp: true});
 
 
 
